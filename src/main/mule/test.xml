@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="testFlow" doc:id="7060910a-b3f0-4a54-a43e-69d87c82f793" >
 		<http:listener doc:name="Listener" doc:id="91ddc405-74f7-4d87-8b5e-e9170bc22827" config-ref="HTTP_Listener_config" path="/abc"/>
 		<logger level="INFO" doc:name="Logger" doc:id="2ea6669c-ba7e-4b80-b821-e73ba1c429ec" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="5deade49-c28f-430b-98a5-510bcc7f380f" message="#[payload]"/>
 	</flow>
 </mule>
